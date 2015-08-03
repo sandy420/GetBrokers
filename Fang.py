@@ -38,6 +38,3 @@ if __name__=="__main__":
 	iplist = ['101.71.27.120:80','221.10.102.203:82']
 	ip = choice(iplist)
 	doc = gethtml(http)
-	# print(doc)
-	# name = getName(doc)
-	# print(name)
