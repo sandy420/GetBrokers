@@ -19,11 +19,7 @@ def getName(html):
 	_soup = bs4.BeautifulSoup(html)
 	Info = _soup.findAll("div",attrs={"id":"houseRow_0_43474169"})
 	print(Info)
-	# jjrInfo = []
-	# for i in range(len(Info)):
-	# 	jjrname = str(re.findall(r'target="_blank">(.*?)</a>',str(Info[i]))[0])
-	# 	jjrInfo.append(jjrname)
-	# 	print(jjrname)
+
 	return Info
 if __name__=="__main__":
 	http = "http://esf.taiyuan.fang.com/agenthome/-i3100-j310/"
