@@ -40,7 +40,7 @@ def getNextPage(doc):
 	return _Info
 
 if __name__=="__main__":
-	URL = str(input("输入房天下经纪人网站地址："))
+	URL = "http://esf.hf.fang.com/agenthome/"
 	jjr_dir = r"d:\temp\jjrlog"
 	filename = str(input("保存的文件名：")+".txt")
 	if exists(jjr_dir) is False:
