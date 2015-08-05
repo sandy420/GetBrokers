@@ -23,7 +23,7 @@ def fib2(n):
 		return b
 
 if __name__ == '__main__':
-	print fib1(3)
-	print fib1(7)
-	print fibs(33)
-	print fib2(33)
+	print(fib1(3))
+	print(fib1(7))
+	print(fibs(33))
+	print(fib2(33))
