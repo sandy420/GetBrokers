@@ -12,12 +12,12 @@ iplist = ['101.71.27.120:80']
 ip = choice(iplist)
 
 #抓取经纪人的网站地址列表
-S_WEB_list=['http://yc.ganji.com/fang/agent/o']
+S_WEB_list=['http://xiangyang.ganji.com/fang/agent/o']
 
 #抓取经纪人并保存
-JJR_FPATH = r"D:\temp\log\yc.ganji.txt"
+JJR_FPATH = r"D:\temp\jjrlog\xiangyang_ganji.txt"
 headers = {
-		"Referer":"http://yc.ganji.com/fang/agent",
+		"Referer":"http://xiangyang.ganji.com/fang/agent",
 		"Host":"yc.ganji.com",
 		"Accept-Language":"zh-CN,zh;q=0.8",
 		"User-Agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
@@ -27,7 +27,7 @@ headers = {
 #####################################################################################################
 web_Url = S_WEB_list.pop()
 
-for i in range(1,51):
+for i in range(36,51):
 	Http = web_Url + str(i)
 	ip = choice(iplist)
 	print("代理IP及端口：%s\t ===>\t开始下载并保存：%s"%(ip,Http))
