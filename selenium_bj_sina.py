@@ -11,12 +11,12 @@ import time
 if __name__ == "__main__":
 
 	http = "http://bj.esf.sina.com.cn/agent/m3-n"     	#网站源地址
-	tkey = "hall_people_red"							#经济人电话关键字
-	nkey = "hall_people_house_name_l"					#经济人姓名关键字
-	filename = r"D:\temp\jjrlog\bj_sina.txt"			#存放文件地址及文件名
+	tkey = "hall_people_red"				#经济人电话关键字
+	nkey = "hall_people_house_name_l"			#经济人姓名关键字
+	filename = r"D:\temp\jjrlog\bj_sina.txt"		#存放文件地址及文件名
 
 	#循环获取经济人信息
-	for i in range(741):    							#网页页数
+	for i in range(741):    				#网页页数
 		url= http+str(i)
 		print("开始获取%s上的经济人信息."%url)
 		try:
